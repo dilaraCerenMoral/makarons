@@ -1,0 +1,217 @@
+/**
+ * makarons CSS framework with pastel colors
+ * @author Dilara Ceren MORAL
+ * @link https://github.com/dilaraCerenMoral/makarons
+ * @version v0.1.0
+ * @license MIT license
+ *
+ */
+
+/* GENERAL SETTINGS */
+html{
+  box-sizing:border-box;
+  line-height: 1.15; /* 1 */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+body,
+input,
+select,
+textarea {
+  font-size: 14px;
+  background: none;
+  border-radius: 0;
+  outline: 0;
+}
+body{
+	font: 16px sans-serif;
+}
+ol, ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a.btn, a.btn:link, a.btn:visited, a.btn:active{
+  text-decoration: none;
+}
+a:active, a:hover{
+  outline: 0;
+}
+.container {
+  margin: 0 16px;
+  width: auto;
+}
+aside,
+details,
+main,
+summary{
+  display: block;
+}
+/* BUTTONS AND ALERTS */
+.btn {
+  background: #999;
+  border: 0;
+  border-radius: 34px;
+  color: #fff;
+  display: inline-block;
+  margin: 2px;
+  padding: 9px 12px 8px 12px;
+  text-align: center;
+  cursor: pointer;
+  border:3px solid #ccc;
+}
+
+.alert{
+	display:block;
+	margin:8px;
+	padding:6px 8px;
+	border:0px;
+	border-style:solid;
+	border-top-left-radius:4px;
+	border-bottom-left-radius:4px;
+	background-color: #eee;
+	border-left-width:6px;
+	color: #333;
+}
+.btn-sm{
+  border-radius: 6px;
+  padding: 10px 10px;
+}
+
+.btn-blossom, .alert-blossom{
+	background-color: #ecc5f5;
+	color:#64356e;
+	border-color:#64356e;
+}
+.btn-mint, .alert-mint{
+	background-color: #a2e2df;
+	color:#355f5d;
+	border-color:#355f5d;
+}
+.btn-lemon, .alert-lemon{
+	background-color: #fdd29e;
+	color: #845215;
+	border-color:#845215;
+}
+.btn-avocado, .alert-avocado{
+	background-color: #a7d478;
+	color: #4d6534;
+	border-color:#4d6534;
+}
+.btn-strawberry, .alert-strawberry{
+	background-color: #ff929f;
+	color: #702932;
+	border-color:#702932;
+}
+
+
+
+/*
+avocado:	a7d478
+lemon: fdd29e
+blossom:	ecc5f5
+strawberry:	ff929f
+mint:   a2e2df
+*/
+
+/* GRID SYSTEM */
+.row {
+  overflow: auto;
+  margin:0;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.col{
+  float: left;
+}
+.col-1{width:8.33333%;}
+.col-2{width:16.66666%;}
+.col-3{width:25%;}
+.col-4{width:33.33333%;}
+.col-5{width:41.66666%;}
+.col-6{width:50%;}
+.col-7{width:58.33333%;}
+.col-8{width:66.66666%;}
+.col-9{width:75%;}
+.col-10{width:83.33333%;}
+.col-11{width:91.66666%;}
+.col-12{width: 100%;}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+	.col-tb-1{width:8.33333%;}
+	.col-tb-2{width:16.66666%;}
+	.col-tb-3{width:25%;}
+	.col-tb-4{width:33.33333%;}
+	.col-tb-5{width:41.66666%;}
+	.col-tb-6{width:50%;}
+	.col-tb-7{width:58.33333%;}
+	.col-tb-8{width:66.66666%;}
+	.col-tb-9{width:75%;}
+	.col-tb-10{width:83.33333%;}
+	.col-tb-11{width:91.66666%;}
+	.col-tb-12{width: 100%;}
+}
+
+@media only screen and (max-device-width : 767px){
+	.col-mb-1{width:8.33333%;}
+	.col-mb-2{width:16.66666%;}
+	.col-mb-3{width:25%;}
+	.col-mb-4{width:33.33333%;}
+	.col-mb-5{width:41.66666%;}
+	.col-mb-6{width:50%;}
+	.col-mb-7{width:58.33333%;}
+	.col-mb-8{width:66.66666%;}
+	.col-mb-9{width:75%;}
+	.col-mb-10{width:83.33333%;}
+	.col-mb-11{width:91.66666%;}
+	.col-mb-12{width: 100%;}
+}
+/* INPUTS */
+form > input,
+form > select,
+form > textarea{
+	display:block;
+}
+
+input,
+select,
+textarea{
+  line-height: normal;
+  border: 3px solid #ccc;
+  padding: 6px 8px;
+  color: inherit;
+  font: inherit;
+  margin: 0 0 6px 0;
+  box-shadow: none;
+  border-radius:34px;
+}
+input:focus,
+select:focus,
+textarea:focus{
+  border-color: #5ab;
+}
+
+
+form.blossom input[type="text"]{
+	border-color:#ecc5f5;
+}
+form.mint input[type="text"]{
+	border-color:#a2e2df;
+}
+form.lemon input[type="text"]{
+	border-color:#fdd29e;
+}
+form.avocado input[type="text"]{
+	border-color:#a7d478;
+}
+form.strawberry input[type="text"]{
+	border-color:#ff929f;
+}
