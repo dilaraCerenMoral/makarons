@@ -51,13 +51,13 @@ a:active, a:hover{
 aside,
 details,
 main,
-summary{
+summary,
+nav{
   display: block;
 }
 /* BUTTONS AND ALERTS */
 .btn {
   background: #999;
-  border: 0;
   border-radius: 34px;
   color: #fff;
   display: inline-block;
@@ -145,7 +145,7 @@ mint:   a2e2df
 .col-11{width:91.66666%;}
 .col-12{width: 100%;}
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+@media only screen and (min-width : 768px) and (max-width : 1024px){
 	.col-tb-1{width:8.33333%;}
 	.col-tb-2{width:16.66666%;}
 	.col-tb-3{width:25%;}
@@ -160,7 +160,7 @@ mint:   a2e2df
 	.col-tb-12{width: 100%;}
 }
 
-@media only screen and (max-device-width : 767px){
+@media only screen and (max-width : 767px){
 	.col-mb-1{width:8.33333%;}
 	.col-mb-2{width:16.66666%;}
 	.col-mb-3{width:25%;}
